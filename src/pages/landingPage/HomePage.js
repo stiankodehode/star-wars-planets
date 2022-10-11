@@ -1,5 +1,17 @@
+import { FlexRow, Planet, FirstPlanet } from "./homePage/styled";
+
 const HomePage = () => {
-    return <h1>HomePage</h1>;
+    return (
+        <>
+            <FlexRow>
+                <FirstPlanet />
+                <Planet />
+                <Planet />
+                <Planet />
+                <Planet />
+            </FlexRow>
+        </>
+    );
 };
 
 export default HomePage;
