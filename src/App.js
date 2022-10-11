@@ -13,11 +13,13 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         axios.get("https://swapi.dev/api/planets/").then((res) => {
-            setStarWarsData(res.data.results);
+            const slicedArray = res.data.results.slice(0, 4);
+            setStarWarsData(slicedArray);
             setIsLoading(false);
         });
     }, []);
 
+    console.log(starWarsData);
     if (isLoading) {
         return <BackgroundImage></BackgroundImage>;
     }
@@ -26,10 +28,28 @@ function App() {
             <BackgroundImage>
                 <LandingPage />
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route
+                        path="/"
+                        element={<HomePage data={starWarsData} />}
+                    />
                     <Route path="/AboutPage" element={<AboutPage />} />
                     <Route path="/ContactPage" element={<ContactPage />} />
-                    <Route path="/PlanetPage" element={<PlanetPage />} />
+                    <Route
+                        path="/PlanetPage/Tatooine"
+                        element={<PlanetPage data={starWarsData[0]} />}
+                    />
+                    <Route
+                        path="/PlanetPage/Alderaan"
+                        element={<PlanetPage data={starWarsData[1]} />}
+                    />
+                    <Route
+                        path="/PlanetPage/YavinIV"
+                        element={<PlanetPage data={starWarsData[2]} />}
+                    />
+                    <Route
+                        path="/PlanetPage/Hoth"
+                        element={<PlanetPage data={starWarsData[3]} />}
+                    />
                 </Routes>
             </BackgroundImage>
         </div>

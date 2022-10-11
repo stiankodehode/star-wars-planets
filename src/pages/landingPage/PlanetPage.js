@@ -1,5 +1,7 @@
-const PlanetPage = () => {
-    return <h1>PlanetPage</h1>;
+const PlanetPage = (props) => {
+    const planet = props.data;
+    console.log(planet);
+    return <></>;
 };
 
 export default PlanetPage;
