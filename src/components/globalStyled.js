@@ -1,5 +1,5 @@
 import styled from "styled-components";
-<<<<<<< HEAD
+
 import BackgroundImg from "../img/galaxy-background.jpg";
 
 export const BackgroundImage = styled.div`
@@ -10,5 +10,3 @@ export const BackgroundImage = styled.div`
     width: 100%;
     position: absolute;
 `;
-=======
->>>>>>> development
