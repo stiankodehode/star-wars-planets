@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Background = styled.section`
-  background: black;
-  height: 89vh;
+  margin-top: 2em;
   color: white;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,12 @@ export const Background = styled.section`
 `;
 
 export const PostageWrapper = styled.section`
+  margin: 2em 0;
+  background: rgba(0, 0, 0, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px yellow solid;
   border-radius: 1em;
   padding: 1em;
@@ -20,6 +25,11 @@ export const PostageWrapper = styled.section`
 `;
 
 export const ContactWrapper = styled.section`
+  background: rgba(0, 0, 0, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -41,6 +51,11 @@ export const ContactFormFlex = styled.section`
 export const YellowText = styled.h2`
   color: yellow;
   text-align: start;
+`;
+export const HeaderText = styled.h2`
+  color: yellow;
+  text-align: start;
+  width: 22em;
 `;
 
 export const TextEmail = styled.input`

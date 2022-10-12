@@ -11,6 +11,7 @@ import {
   DeleteBtn,
   PostageWrapper,
   ImgStyle,
+  HeaderText,
 } from "../../components/contactPageStyle";
 import JediLogo from "../../img/jedi-logo.png";
 
@@ -21,7 +22,7 @@ function clickConfirm() {
 const ContactPage = () => {
   return (
     <Background>
-      <YellowText>Contact</YellowText>
+      <HeaderText>Contact</HeaderText>
 
       <PostageWrapper>
         <ImgStyle src={JediLogo} />
