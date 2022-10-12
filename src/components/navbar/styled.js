@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
@@ -10,10 +10,18 @@ export const Nav = styled.nav`
   background-color: black;
 `;
 
-export const NavLink = styled(Link)`
+export const NavbarLink = styled(NavLink)`
   text-decoration: none;
   list-style: none;
   display: inline-block;
   padding: 0 20px;
   color: white;
+
+  &:hover,
+  &:focus {
+    color: yellow;
+  }
+  &:active {
+    color: yellow;
+  }
 `;
