@@ -2,11 +2,10 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FlexRow = styled.div`
-    margin: 0;
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 95vh;
     align-items: center;
     overflow: hidden;
     @media (max-width: 700px) {
@@ -23,6 +22,7 @@ export const FirstPlanet = styled.div`
 `;
 
 export const PlanetBoxLink = styled(Link)`
+    margin-top: 75px;
     text-decoration: none;
     width: 20%;
     display: flex;
@@ -59,7 +59,6 @@ export const Hoth = styled.img`
     width: 60%;
 `;
 export const Sun = styled.img`
-    margin-top: -75px;
     max-width: 20%;
     @media (max-width: 700px) {
         transform: rotate(90deg);
