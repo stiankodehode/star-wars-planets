@@ -3,7 +3,6 @@ import { NavbarLink, Nav } from './styled';
 const Navbar = () => {
   return (
     <Nav>
-      <NavbarLink></NavbarLink>
       <NavbarLink to="/">Home</NavbarLink>
       <NavbarLink to="/AboutPage">About</NavbarLink>
       <NavbarLink to="/AboutPage">Planets</NavbarLink>
