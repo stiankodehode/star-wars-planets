@@ -1,5 +1,6 @@
 import {
     FlexRow,
+    FlexColumn,
     Sun,
     PlanetBoxLink,
     PlanetName,
@@ -18,7 +19,8 @@ const HomePage = (props) => {
     return (
         <>
             <FlexRow>
-                <Sun src={SunImg} />
+                <Sun src={SunImg} alt="the sun" />
+
                 <PlanetBoxLink to="/PlanetPage/Tatooine">
                     <Tatooine src={TatooineImg} />
                     <PlanetName>{props.data[0].name}</PlanetName>
