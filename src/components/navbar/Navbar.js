@@ -1,11 +1,13 @@
-import { Nav, NavLink } from './styled';
+import { NavbarLink, Nav } from './styled';
 
 const Navbar = () => {
   return (
     <Nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/AboutPage">About</NavLink>
-      <NavLink to="/ContactPage">Contact</NavLink>
+      <NavbarLink></NavbarLink>
+      <NavbarLink to="/">Home</NavbarLink>
+      <NavbarLink to="/AboutPage">About</NavbarLink>
+      <NavbarLink to="/AboutPage">Planets</NavbarLink>
+      <NavbarLink to="/ContactPage">Contact</NavbarLink>
     </Nav>
   );
 };
