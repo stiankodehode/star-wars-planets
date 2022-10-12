@@ -14,13 +14,6 @@ export const FlexRow = styled.div`
     }
 `;
 
-export const Planet = styled.div`
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: red;
-`;
-
 export const FirstPlanet = styled.div`
     width: 300px;
     height: 300px;
