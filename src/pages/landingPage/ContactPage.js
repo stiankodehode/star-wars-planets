@@ -12,6 +12,7 @@ import {
   PostageWrapper,
   ImgStyle,
   HeaderText,
+  TextEmailWrapper,
 } from "../../components/contactPageStyle";
 import JediLogo from "../../img/jedi-logo.png";
 
@@ -38,7 +39,7 @@ const ContactPage = () => {
         <YellowText>Send us your Jedi application</YellowText>
         <ContactFormFlex>
           <FormFlex>
-            <section className="text-email-wrapper">
+            <TextEmailWrapper>
               <label>
                 <TextEmail type="text" placeholder="Darth Vader" />
               </label>
@@ -48,7 +49,7 @@ const ContactPage = () => {
                   placeholder="darth.vader@darkside.com"
                 />
               </label>
-            </section>
+            </TextEmailWrapper>
             <label>
               <Application
                 type="textarea"

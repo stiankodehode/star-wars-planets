@@ -11,11 +11,11 @@ export const Background = styled.section`
 
 export const PostageWrapper = styled.section`
   margin: 2em 0;
-  background: rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.63);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(1.25px);
+  -webkit-backdrop-filter: blur(1.25px);
   border: 1px yellow solid;
   border-radius: 1em;
   padding: 1em;
@@ -25,11 +25,11 @@ export const PostageWrapper = styled.section`
 `;
 
 export const ContactWrapper = styled.section`
-  background: rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.63);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(1.25px);
+  -webkit-backdrop-filter: blur(1.25px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,6 +39,9 @@ export const ContactWrapper = styled.section`
   border-radius: 2em;
   padding: 3em;
   margin: 1em;
+  @media screen and (max-width: 600px) {
+    width: 50%;
+  }
 `;
 
 export const ContactFormFlex = styled.section`
@@ -56,12 +59,26 @@ export const HeaderText = styled.h2`
   color: yellow;
   text-align: start;
   width: 22em;
+  @media screen and (max-width: 600px) {
+    width: auto;
+  }
 `;
 
 export const TextEmail = styled.input`
   border-radius: 2em;
   padding: 0.3em 0.6em;
   margin: 1em 1.1em;
+  @media screen and (max-width: 600px) {
+    width: auto;
+    border: 1px yellow solid;
+  }
+`;
+
+export const TextEmailWrapper = styled.section`
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Application = styled.textarea`
@@ -71,6 +88,9 @@ export const Application = styled.textarea`
   border-radius: 1em;
   padding: 0.3em 0.6em;
   margin: 1em 0;
+  @media screen and (max-width: 600px) {
+    width: auto;
+  }
 `;
 
 export const FormFlex = styled.form`
@@ -108,6 +128,9 @@ export const BtnWrapper = styled.section`
   flex-direction: row;
   justify-content: space-between;
   width: 26em;
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 export const ImgStyle = styled.img`
