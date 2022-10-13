@@ -67,9 +67,9 @@ export const Hoth = styled.img`
     width: 60%;
 `;
 export const Sun = styled.img`
-    margin-top: -55px;
     max-width: 20%;
     @media (max-width: 700px) {
+        margin-top: -75px;
         transform: rotate(90deg);
     }
 `;
