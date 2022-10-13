@@ -11,6 +11,8 @@ import { BackgroundImage } from "./components/globalStyled";
 function App() {
     const [starWarsData, setStarWarsData] = useState();
     const [isLoading, setIsLoading] = useState(true);
+
+    // API call from the Star Wars api, and saving the first 4 planets to a state
     useEffect(() => {
         axios.get("https://swapi.dev/api/planets/").then((res) => {
             const slicedArray = res.data.results.slice(0, 4);
@@ -19,7 +21,7 @@ function App() {
         });
     }, []);
 
-    console.log(starWarsData);
+    // If loading is true, we render just the background image till the API call is done.
     if (isLoading) {
         return <BackgroundImage></BackgroundImage>;
     }
