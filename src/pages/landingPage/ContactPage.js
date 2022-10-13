@@ -11,6 +11,8 @@ import {
   DeleteBtn,
   PostageWrapper,
   ImgStyle,
+  HeaderText,
+  TextEmailWrapper,
 } from "../../components/contactPageStyle";
 import JediLogo from "../../img/jedi-logo.png";
 
@@ -21,7 +23,7 @@ function clickConfirm() {
 const ContactPage = () => {
   return (
     <Background>
-      <YellowText>Contact</YellowText>
+      <HeaderText>Contact</HeaderText>
 
       <PostageWrapper>
         <ImgStyle src={JediLogo} />
@@ -37,7 +39,7 @@ const ContactPage = () => {
         <YellowText>Send us your Jedi application</YellowText>
         <ContactFormFlex>
           <FormFlex>
-            <section className="text-email-wrapper">
+            <TextEmailWrapper>
               <label>
                 <TextEmail type="text" placeholder="Darth Vader" />
               </label>
@@ -47,7 +49,7 @@ const ContactPage = () => {
                   placeholder="darth.vader@darkside.com"
                 />
               </label>
-            </section>
+            </TextEmailWrapper>
             <label>
               <Application
                 type="textarea"
