@@ -5,10 +5,12 @@ export const FlexRow = styled.div`
     margin-top: 100px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     @media (max-width: 700px) {
+        margin-top: 0px;
         flex-direction: column;
     }
 `;
@@ -31,6 +33,7 @@ export const PlanetBoxLink = styled(Link)`
     flex-direction: column;
     @media (max-width: 700px) {
         height: 20%;
+        margin-top: 25px;
     }
 
     &:hover {
@@ -39,8 +42,13 @@ export const PlanetBoxLink = styled(Link)`
 `;
 
 export const PlanetName = styled.h2`
+    text-align: center;
+    min-width: 150px;
     color: yellow;
     font-size: 30px;
+    @media (max-width: 700px) {
+        margin-top: 0;
+    }
 `;
 
 export const Tatooine = styled.img`
@@ -59,6 +67,7 @@ export const Hoth = styled.img`
     width: 60%;
 `;
 export const Sun = styled.img`
+    margin-top: -55px;
     max-width: 20%;
     @media (max-width: 700px) {
         transform: rotate(90deg);
