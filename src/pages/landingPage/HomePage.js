@@ -1,6 +1,5 @@
 import {
     FlexRow,
-    FlexColumn,
     Sun,
     PlanetBoxLink,
     PlanetName,
@@ -8,6 +7,7 @@ import {
     Alderaan,
     YavinIV,
     Hoth,
+    HomeContainer,
 } from "./homePage/styled";
 import TatooineImg from "../../img/tatooine.png";
 import AlderaanImg from "../../img/alderaan.png";
@@ -17,7 +17,7 @@ import SunImg from "../../img/sun.png";
 
 const HomePage = (props) => {
     return (
-        <>
+        <HomeContainer>
             <FlexRow>
                 <Sun src={SunImg} alt="the sun" />
 
@@ -41,7 +41,7 @@ const HomePage = (props) => {
                     <PlanetName>{props.data[3].name}</PlanetName>
                 </PlanetBoxLink>
             </FlexRow>
-        </>
+        </HomeContainer>
     );
 };
 

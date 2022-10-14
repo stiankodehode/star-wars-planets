@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const FlexRow = styled.div`
-    margin-top: 100px;
+export const HomeContainer = styled.div`
+    height: 90vh;
     width: 100%;
+    display: flex;
+`;
+
+export const FlexRow = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
