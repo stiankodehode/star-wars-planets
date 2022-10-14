@@ -1,5 +1,8 @@
+import AboutUs from '../../components/About/AboutUs';
+import { Nav } from '../../components/navbar/styled';
+
 const AboutPage = () => {
-    return <h1>AboutPage</h1>;
+  return <AboutUs></AboutUs>;
 };
 
 export default AboutPage;
