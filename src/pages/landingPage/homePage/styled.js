@@ -15,7 +15,6 @@ export const FlexRow = styled.div`
     overflow: hidden;
     @media (max-width: 700px) {
         margin-top: 0px;
-        height: 90vh;
         flex-direction: column;
     }
 `;
