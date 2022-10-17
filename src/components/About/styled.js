@@ -1,38 +1,62 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const Body = styled.body`
   width: 100%;
-  align-items: center;
-  height: 700px;
+  height: 100%;
+  overflow: hidden;
 `;
 
-export const Container = styled.header`
+export const Fade = styled.div`
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(0deg, transparent, black 90%);
+
+  min-height: 60vh;
+  top: -25px;
+  z-index: 1;
+`;
+
+export const StarWars = styled.main`
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  width: 500px;
-  @media only screen and (max-width: 800px) {
-    width: 350px;
+  position: relative;
+  height: 100px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+`;
+
+const CrawlAnimation = keyframes`
+0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+	100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
   }
 `;
 
-export const Heading = styled.h1`
-  color: yellow;
-  font-size: 32px;
+export const Crawl = styled.section`
+  animation: ${CrawlAnimation} 60s linear;
+  position: relative;
+  top: 99px;
+  transform-origin: 50% 100%;
 `;
 
-export const Text = styled.p`
-  margin: 0;
-  color: white;
-  font-size: 18px;
-  border: 1px yellow solid;
-  background: rgba(0, 0, 0, 0.63);
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.25px);
-  -webkit-backdrop-filter: blur(1.25px);
+export const Title = styled.header`
+  font-size: 90%;
+  text-align: center;
+`;
+
+export const Paragraph = styled.p``;
+
+export const HeadingOne = styled.h1`
+  margin: 0 0 100px;
+  text-transform: uppercase;
 `;

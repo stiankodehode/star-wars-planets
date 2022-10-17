@@ -1,29 +1,44 @@
 import React from 'react';
-import { Container, Heading, Text, Wrapper } from './styled';
+import {
+  Body,
+  Title,
+  HeadingOne,
+  Paragraph,
+  StarWars,
+  Fade,
+  Crawl,
+} from './styled';
 
 const AboutUs = () => {
   return (
-    <div>
-      <Wrapper>
-        <Container>
-          <Heading>About</Heading>
-          <Text>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32.
-          </Text>
-        </Container>
-      </Wrapper>
-    </div>
+    <>
+      <Body>
+        <Fade></Fade>
+        <StarWars>
+          <Crawl>
+            <Title>
+              <Paragraph>Episode IV</Paragraph>
+              <HeadingOne>A New Hope</HeadingOne>
+            </Title>
+            <Paragraph>
+              It is a period of civil war. Rebel spaceships, striking from a
+              hidden base, have won their first victory against the evil
+              Galactic Empire.
+            </Paragraph>
+            <Paragraph>
+              It is a period of civil war. Rebel spaceships, striking from a
+              hidden base, have won their first victory against the evil
+              Galactic Empire.
+            </Paragraph>
+            <Paragraph>
+              It is a period of civil war. Rebel spaceships, striking from a
+              hidden base, have won their first victory against the evil
+              Galactic Empire.
+            </Paragraph>
+          </Crawl>
+        </StarWars>
+      </Body>
+    </>
   );
 };
 
