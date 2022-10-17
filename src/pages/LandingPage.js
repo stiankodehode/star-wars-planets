@@ -6,6 +6,7 @@ import HomePage from "../pages/landingPage/HomePage";
 import ContactPage from "../pages/landingPage/ContactPage";
 import PlanetPage from "../pages/landingPage/PlanetPage";
 import AboutPage from "../pages/landingPage/AboutPage";
+import AmongUsPage from "./landingPage/AmongUsPage";
 import { BackgroundImage } from "../components/globalStyled";
 
 export const LandingPage = () => {
@@ -48,6 +49,7 @@ export const LandingPage = () => {
                     path="/PlanetPage/Hoth"
                     element={<PlanetPage data={starWarsData[3]} />}
                 />
+                <Route path="/AmongUsPage" element={<AmongUsPage />} />
             </Routes>
         </>
     );

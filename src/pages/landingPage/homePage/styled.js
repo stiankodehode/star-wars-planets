@@ -27,6 +27,11 @@ export const FirstPlanet = styled.div`
     background-color: #1c70a4;
 `;
 
+export const AmongUsLink = styled(Link)`
+    text-decoration: none;
+    position: absolute;
+`;
+
 export const PlanetBoxLink = styled(Link)`
     margin-top: 75px;
     text-decoration: none;
@@ -76,4 +81,9 @@ export const Sun = styled.img`
         margin-top: -75px;
         transform: rotate(90deg);
     }
+`;
+
+export const AmongUs = styled.img`
+    width: 100px;
+    opacity: 0.5;
 `;
