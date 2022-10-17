@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/star-wars-planets/static/css/main.e6c13ad2.css",
-    "main.js": "/star-wars-planets/static/js/main.35a2e6d1.js",
+    "main.js": "/star-wars-planets/static/js/main.cedc8aa4.js",
     "static/media/galaxy-background.jpg": "/star-wars-planets/static/media/galaxy-background.61d4f5f8620bc408f51a.jpg",
     "static/media/hoth.png": "/star-wars-planets/static/media/hoth.00cc319a937275b53617.png",
     "static/media/yavin-iv.png": "/star-wars-planets/static/media/yavin-iv.200d9c736b01526ff1a7.png",
@@ -11,10 +11,10 @@
     "static/media/tatooine.png": "/star-wars-planets/static/media/tatooine.b12de3612b64a9b97416.png",
     "index.html": "/star-wars-planets/index.html",
     "main.e6c13ad2.css.map": "/star-wars-planets/static/css/main.e6c13ad2.css.map",
-    "main.35a2e6d1.js.map": "/star-wars-planets/static/js/main.35a2e6d1.js.map"
+    "main.cedc8aa4.js.map": "/star-wars-planets/static/js/main.cedc8aa4.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.35a2e6d1.js"
+    "static/js/main.cedc8aa4.js"
   ]
 }
