@@ -6,6 +6,25 @@ export const Body = styled.body`
   overflow: hidden;
 `;
 
+const IntroKeyFrames = keyframes`
+0% { opacity: 0; }  
+25% { opacity: 1; } 
+75% { opacity: 1; } 
+100% { opacity: 0; }
+`;
+
+export const Intro = styled.p`
+  font-family: 'Franklin Gothic Book';
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 40px;
+  /* animation: intro 5s ease-in-out 1s; */
+  /* animation: ${IntroKeyFrames}; */
+`;
+
 export const Fade = styled.div`
   position: relative;
   width: 100%;
