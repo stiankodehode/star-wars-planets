@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const PlanetPageContainer = styled.div`
-    margin: 8em auto 0;
+    margin: 3em auto 0;
     width: 90%;
     max-width: 1000px;
     display: flex;
