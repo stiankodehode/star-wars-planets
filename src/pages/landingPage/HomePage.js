@@ -9,6 +9,7 @@ import {
     Hoth,
     HomeContainer,
     AmongUsLink,
+    AmongUsImg,
     AmongUs,
 } from "./homePage/styled";
 import TatooineImg from "../../img/tatooine.png";
@@ -16,7 +17,7 @@ import AlderaanImg from "../../img/alderaan.png";
 import YavinIVImg from "../../img/yavin-iv.png";
 import HothImg from "../../img/hoth.png";
 import SunImg from "../../img/sun.png";
-import AmongUsImg from "../../img/amongus.png";
+import AmongUsImage from "../../img/amongus.png";
 
 const HomePage = (props) => {
     return (
@@ -43,9 +44,11 @@ const HomePage = (props) => {
                     <Hoth src={HothImg} />
                     <PlanetName>{props.data[3].name}</PlanetName>
                 </PlanetBoxLink>
-                <AmongUsLink to="/AmongUsPage">
-                    <AmongUs src={AmongUsImg} />
-                </AmongUsLink>
+                <AmongUs>
+                    <AmongUsLink to="/AmongUsPage">
+                        <AmongUsImg src={AmongUsImage} />
+                    </AmongUsLink>
+                </AmongUs>
             </FlexRow>
         </HomeContainer>
     );

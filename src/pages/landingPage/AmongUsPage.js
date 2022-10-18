@@ -1,5 +1,11 @@
+import { AmongUsContainer } from "./amongUsPage/styled";
+
 const AmongUsPage = () => {
-    return <h1></h1>;
+    return (
+        <AmongUsContainer>
+            <h1>kinda sus</h1>
+        </AmongUsContainer>
+    );
 };
 
 export default AmongUsPage;

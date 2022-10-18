@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HomeContainer = styled.div`
@@ -27,9 +27,14 @@ export const FirstPlanet = styled.div`
     background-color: #1c70a4;
 `;
 
+const slideAnimation = keyframes`
+ 0% {left: 10%}
+ 50% {left: 90%}
+ 100% { left: 10%; }
+`;
+
 export const AmongUsLink = styled(Link)`
     text-decoration: none;
-    position: absolute;
 `;
 
 export const PlanetBoxLink = styled(Link)`
@@ -83,7 +88,19 @@ export const Sun = styled.img`
     }
 `;
 
-export const AmongUs = styled.img`
+const spinAnimation = keyframes`
+    100%{ transform: rotate(360deg);}
+`;
+
+export const AmongUsImg = styled.img`
     width: 100px;
     opacity: 0.5;
+    animation: ${spinAnimation} 2s infinite linear;
+`;
+
+export const AmongUs = styled.div`
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    animation: ${slideAnimation} 10s linear infinite;
 `;
